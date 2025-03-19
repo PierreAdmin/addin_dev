@@ -1,5 +1,5 @@
 Office.onReady(function() {
-    Office.actions.associate("openTicketingTool", openTicketingTool);
+    
 });
 
 function openTicketingTool(event) {
@@ -7,3 +7,5 @@ function openTicketingTool(event) {
     Office.context.ui.openBrowserWindow(url);
     event.completed();
 }
+
+Office.actions.associate("openTicketingTool", openTicketingTool);
